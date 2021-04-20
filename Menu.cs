@@ -12,7 +12,7 @@ namespace Biblioteca
             do
             {
                 Principal();
-            } while(opcion_menu != "0");
+            } while(opcion_menu != "");
         }
         private void Principal()
         {
@@ -34,10 +34,12 @@ namespace Biblioteca
             {
                 case "C":
                     Console.Clear();
-                    Console.ReadLine();
+                    retornar_menu();
+                    Console.ReadKey();
                     break;
                 case "L":
                     Console.Clear();
+                    
                     Console.ReadLine();
                     break;
                 case "E":
@@ -71,4 +73,4 @@ namespace Biblioteca
             seleccion_menu(op);
         }
     }
-}
+} 

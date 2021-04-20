@@ -22,15 +22,5 @@ namespace Biblioteca
             this.Descripcion = description;
             this.Lanzaminto = lanzamiento;
         }
-
-
-        // public IEnumerable<Libros> getLibros()
-        // {
-            
-        //     return IEnumerable<Libros>;
-        // }
-            
-             
-
     }
 }
