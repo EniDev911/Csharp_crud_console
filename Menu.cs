@@ -19,10 +19,10 @@ namespace Biblioteca
             Console.Write("\n");
             Console.WriteLine("\tControl de Biblioteca");
             Console.WriteLine("---------------Menu Principal---------------");
-            Console.WriteLine("1 [C]rear registro   | 3 [E]liminar registro");
-            Console.WriteLine("2 [L]istar registros | 4 [M]odificar registro");
-            Console.WriteLine("0 [S]alir");
-            Console.WriteLine("Seleccione una opción");
+            Console.WriteLine("[C]rear registro   | [E]liminar registro");
+            Console.WriteLine("[L]istar registros | [M]odificar registro");
+            Console.WriteLine("[S]alir");
+            Console.WriteLine("Seleccione una opción ingresando un carácter entre corchetes");
             opcion_menu = Console.ReadLine();
             seleccion_menu(opcion_menu);
         }
@@ -32,7 +32,33 @@ namespace Biblioteca
                 return;
             switch (op)
             {
+                case "C":
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+                case "L":
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+                case "E":
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+                case "M":
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+                case "S":
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+                case "R":
+                    Console.Clear();
+                    Principal();
+                    Console.ReadLine();
+                    break;                                                            
                 default:
+                    System.Console.WriteLine("Selección Inválida");
                     break;
             }
         }
@@ -40,7 +66,7 @@ namespace Biblioteca
         private void retornar_menu()
         {
             string op;
-            Console.WriteLine("presione [r] para retornar al menu principal");
+            Console.WriteLine("presione [R] para retornar al menu principal");
             op = Console.ReadLine();
             seleccion_menu(op);
         }
