@@ -6,6 +6,7 @@ namespace Biblioteca
 {
     public class Menu
     {
+        Crud objCrud = new Crud();
         string opcion_menu = "";
         public void iniciar()
         {
