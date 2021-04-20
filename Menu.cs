@@ -6,6 +6,7 @@ namespace Biblioteca
 {
     public class Menu
     {
+        Crud objCrud = new Crud();
         string opcion_menu = "";
         public void iniciar()
         {
@@ -34,6 +35,7 @@ namespace Biblioteca
             {
                 case "C":
                     Console.Clear();
+                    objCrud.Crear_Libro();
                     Console.ReadLine();
                     break;
                 case "L":
